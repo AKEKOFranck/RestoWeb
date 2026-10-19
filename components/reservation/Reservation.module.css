@@ -1,0 +1,23 @@
+.panel { background: var(--sable-2); padding: clamp(1.5rem, 4vw, 2.8rem); display: grid; grid-template-columns: 1fr 1fr; gap: 1.3rem; align-content: start; }
+.full { grid-column: 1 / -1; }
+.field { display: flex; flex-direction: column; gap: 0.4rem; }
+.field label { font-weight: 600; font-size: 0.95rem; }
+.field input, .field select, .field textarea { background: var(--paper); border: 0; padding: 0.9rem 1rem; width: 100%; min-height: 3.1rem; }
+.field textarea { resize: vertical; }
+.field input:focus, .field select:focus, .field textarea:focus { outline: 3px solid var(--lagune); outline-offset: 2px; }
+.field [aria-invalid="true"] { background: #fde3da; }
+.field select:disabled { color: var(--cacao-soft); }
+.error { color: #9a2a10; font-size: 0.92rem; font-weight: 600; }
+.hint { margin-top: 0.9rem; font-size: 0.9rem; color: var(--cacao-soft); }
+.trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+.doneIcon { display: grid; place-items: center; width: 3.6rem; height: 3.6rem; background: var(--soleil); grid-column: 1 / -1; }
+.doneTitle { grid-column: 1 / -1; font-size: clamp(1.7rem, 3.5vw, 2.3rem); }
+.doneText { grid-column: 1 / -1; color: var(--cacao-soft); }
+.recap { grid-column: 1 / -1; display: grid; gap: 0.5rem; background: var(--paper); padding: 1.3rem 1.5rem; }
+.recap div { display: flex; justify-content: space-between; gap: 1rem; }
+.recap dt { color: var(--cacao-soft); }
+.recap dd { font-weight: 600; text-align: right; }
+.doneActions { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 0.8rem; }
+
+@media (max-width: 560px) { .panel { grid-template-columns: 1fr; } }

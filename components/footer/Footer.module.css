@@ -1,0 +1,16 @@
+.footer { background: var(--cacao); color: var(--sable); padding-top: 4rem; }
+.grid { display: grid; grid-template-columns: 1.3fr 1fr 1.2fr; gap: 3rem; padding-bottom: 3rem; }
+.brand { font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; }
+.muted { color: #d9c3ad; margin-top: 0.3rem; }
+.address { display: flex; align-items: center; gap: 0.5rem; margin-top: 1.4rem; }
+.address a:hover, .list a:hover { color: var(--soleil); }
+.socials { display: flex; gap: 0.6rem; margin-top: 1.2rem; }
+.socials a { display: grid; place-items: center; width: 2.6rem; height: 2.6rem; background: #5a2a1a; transition: background-color 0.2s, color 0.2s; }
+.socials a:hover { background: var(--soleil); color: var(--cacao); }
+.title { font-weight: 700; margin-bottom: 1rem; }
+.list { display: grid; gap: 0.5rem; }
+.hours { display: grid; gap: 0.35rem; font-size: 0.95rem; }
+.hours div { display: flex; justify-content: space-between; gap: 1rem; max-width: 280px; }
+.hours dd { color: #d9c3ad; }
+.copy { padding-block: 1.6rem 2rem; font-size: 0.88rem; color: #bfa58d; }
+@media (max-width: 800px) { .grid { grid-template-columns: 1fr; gap: 2.2rem; } }

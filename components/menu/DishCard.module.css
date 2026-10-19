@@ -1,0 +1,9 @@
+.card { background: var(--paper); display: flex; flex-direction: column; height: 100%; }
+.photo { aspect-ratio: 4 / 3; }
+.body { padding: 1.5rem; display: flex; flex-direction: column; gap: 0.7rem; flex: 1; }
+.head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+.head h3 { font-size: 1.2rem; }
+.price { font-weight: 700; color: var(--braise); white-space: nowrap; }
+.desc { color: var(--cacao-soft); font-size: 0.97rem; }
+.tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: auto; padding-top: 0.4rem; }
+.tags li { background: var(--soleil); color: var(--cacao); font-size: 0.8rem; font-weight: 600; padding: 0.15rem 0.6rem; }

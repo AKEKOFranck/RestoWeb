@@ -1,0 +1,8 @@
+.list { display: grid; gap: clamp(2.5rem, 6vw, 5rem); }
+.item { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 5vw, 4rem); align-items: center; }
+.item:nth-child(even) .photo { order: 2; }
+.photo { aspect-ratio: 4 / 3; }
+.text h2 { font-size: clamp(1.7rem, 3.5vw, 2.4rem); margin-bottom: 1rem; }
+.text p { color: var(--cacao-soft); }
+.cta { display: flex; }
+@media (max-width: 800px) { .item { grid-template-columns: 1fr; } .item:nth-child(even) .photo { order: 0; } }

@@ -1,0 +1,10 @@
+.layout { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+.aside h2 { font-size: 1.5rem; margin-bottom: 1rem; }
+.aside h2:not(:first-child) { margin-top: 2.2rem; }
+.hours { display: grid; gap: 0.4rem; }
+.hours div { display: flex; justify-content: space-between; gap: 1rem; }
+.hours dd { color: var(--cacao-soft); }
+.link { color: var(--braise); font-weight: 600; }
+.link:hover { color: var(--braise-dark); }
+.note { margin-top: 1.5rem; font-size: 0.92rem; color: var(--cacao-soft); }
+@media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }

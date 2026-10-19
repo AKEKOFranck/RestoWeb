@@ -1,0 +1,12 @@
+.controls { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1.2rem; margin-bottom: 3rem; }
+.tabs { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.tab { background: var(--sable-2); border: 0; padding: 0.65rem 1.2rem; font-weight: 600; font-size: 0.95rem; cursor: pointer; transition: background-color 0.2s, color 0.2s; }
+.tab:hover { background: var(--soleil); }
+.tabOn, .tabOn:hover { background: var(--braise); color: #fff; }
+.search { display: flex; align-items: center; gap: 0.6rem; background: var(--paper); padding: 0 1rem; min-width: min(100%, 280px); }
+.search input { flex: 1; background: none; border: 0; padding: 0.7rem 0; outline: none; }
+.search:focus-within { outline: 3px solid var(--lagune); outline-offset: 3px; }
+.section { margin-bottom: 3.5rem; }
+.section h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 1.5rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 1.2rem; }
+.empty { padding: 2rem 0; color: var(--cacao-soft); }

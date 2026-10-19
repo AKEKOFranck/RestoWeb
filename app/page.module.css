@@ -1,0 +1,27 @@
+.hero { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); min-height: clamp(540px, 78vh, 740px); }
+.heroText { display: flex; flex-direction: column; justify-content: center; gap: 1.3rem; padding-block: 3rem; padding-left: max(1.25rem, calc((100vw - var(--container)) / 2)); padding-right: 2rem; }
+.lead { font-size: 1.15rem; color: var(--cacao-soft); }
+.actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 0.6rem; }
+.heroPhoto { clip-path: polygon(9% 0, 100% 0, 100% 100%, 0 100%); }
+
+.story { background: var(--paper); }
+.storyGrid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+.storyPhoto { aspect-ratio: 4 / 3; clip-path: polygon(0 3%, 97% 0, 100% 97%, 2% 100%); }
+.storyText { margin-top: 1.2rem; color: var(--cacao-soft); }
+.sign { margin-block: 1.4rem 1.8rem; }
+
+.signatureHead { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 1.5rem; margin-bottom: 2.5rem; }
+.signatureText { margin-top: 0.8rem; color: var(--cacao-soft); }
+.dishes { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.2rem; }
+
+.band { background: var(--braise); color: #fff; padding-block: clamp(2.5rem, 6vw, 4rem); }
+.bandInner { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1.5rem; }
+.bandInner h2 { font-size: clamp(1.7rem, 3.5vw, 2.4rem); }
+.bandInner p { margin-top: 0.4rem; }
+
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; }
+  .heroText { padding: 3rem 1.25rem 2rem; }
+  .heroPhoto { clip-path: none; height: 320px; }
+  .storyGrid { grid-template-columns: 1fr; }
+}
